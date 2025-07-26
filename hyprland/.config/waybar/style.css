@@ -1,0 +1,67 @@
+@define-color foreground #eeeeee;
+@define-color foreground-inactive #aaaaaa;
+@define-color background #000000;
+@define-color background-active #5e81ac;
+@define-color orange #ffaa00;
+@define-color red #E67E80;
+
+* {
+    font-family: Fira Code Nerd Font;
+    font-size: 13;
+	font-weight: bold;
+    padding: 0;
+    margin: 0;
+}
+
+#waybar {
+    color: @foreground;
+    background-color: @background;
+}
+
+#workspaces button {
+    color: @foreground;
+	padding: 5px;
+}
+
+#workspaces button.empty {
+    color: @foreground-inactive;
+}
+
+#workspaces button.active {
+    background-color: @background-active;
+    border-radius: 0;
+    color: #ffffff;
+}
+
+#workspaces button.hover {
+    border-radius: 0;
+}
+
+#pulseaudio,
+#backlight,
+#language,
+#bluetooth,
+#memory,
+#temperature,
+#network,
+#tray {
+	padding-right: 1em;
+}
+
+#battery {
+	padding-right: 2em;
+}
+
+#battery.warning:not(.charging) {
+    color: @orange;
+}
+
+#battery.critical:not(.charging) {
+    color: @red;
+}
+
+#network.disconnected {
+    color: @red;
+}
+
+
