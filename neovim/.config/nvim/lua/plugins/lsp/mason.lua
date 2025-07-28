@@ -29,8 +29,9 @@ return {
 				"lua_ls",
 				"pylsp",
 				"gopls",
-                "bashls",
+				"bashls",
 				"clangd",
+				"ts_ls",
 			},
 		})
 
@@ -42,6 +43,7 @@ return {
 				--"black", -- python formatter
 				--"pylint",
 				"eslint_d",
+				"ts-standard",
 			},
 		})
 	end,
