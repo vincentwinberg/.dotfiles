@@ -1,6 +1,7 @@
 vim.g.mapleader = " "
 
 local keymap = vim.keymap
+local helperfuncs = require("helperfunctions")
 
 keymap.set("n", "<leader>cs", ":nohl<CR>", { desc = "Clears highlighted search in file" })
 
@@ -24,3 +25,7 @@ keymap.set("n", "<leader>tq", "<cmd>tabclose<CR>", { desc = "Close current tab" 
 keymap.set("n", "<leader>tl", "<cmd>tabn<CR>", { desc = "Go to next tab" })
 keymap.set("n", "<leader>th", "<cmd>tabp<CR>", { desc = "Go to previous tab" })
 keymap.set("n", "<leader>tbn", "<cmd>tabnew %<CR>", { desc = "Open current buffer in new tab" })
+
+-- build/run commands
+keymap.set("n", "<leader>pr", ":!python %<CR>", { desc = "Run current Python file" })
+keymap.set("n", "<leader>bb", helperfuncs.cmake_build, { desc = "Compile using CMakeLists.txt" })
