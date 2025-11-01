@@ -32,6 +32,7 @@ return {
 				"bashls",
 				"clangd",
 				"ts_ls",
+				"jdtls"
 			},
 		})
 
