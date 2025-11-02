@@ -13,8 +13,8 @@ return {
 
         conform.setup({
             formatters_by_ft = {
-                c = { "clang-format" },
-                cpp = { "clang-format" },
+                -- c = { "clang-format" },
+                -- cpp = { "clang-format" },
                 py = { "black" },
                 --lua = { "lua-format" },
             },
